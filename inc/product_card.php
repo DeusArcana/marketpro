@@ -53,19 +53,19 @@ $offers[006] = array(
 
 function product_card($offer)
 {
-	return <<<EOT
-							<div class="col-md-4 pb-3">
+	return <<<HTML
+							<div class="col-md-3 pb-3">
 								<div class="card" style="width: 18rem;">
-									<img src="{$offer["image"]}" class="card-img-top" alt="{$offer["name"]}">
+									<img src="{$offer['image']}" class="card-img-top" alt="{$offer['name']}">
 									<div class="card-body">
-										<h5 class="card-title">{$offer["name"]}</h5>
-										<p class="card-text">{$offer["intro"]}</p>
+										<h5 class="card-title">{$offer['name']}</h5>
+										<p class="card-text">{$offer['intro']}</p>
 										<a href="#" class="btn btn-primary">View more details!</a>
 									</div>
 								</div>
 							</div>
 
-		EOT;
+		HTML;
 }
 
 
