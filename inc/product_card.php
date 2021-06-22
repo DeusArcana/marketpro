@@ -60,7 +60,7 @@ function product_card($key, $offer)
 									<div class="card-body">
 										<h5 class="card-title">{$offer['name']}</h5>
 										<p class="card-text">{$offer['intro']}</p>
-										<a href="offer.php?id={$key}" class="btn btn-primary">View more details!</a>
+										<a href="{$key}-special-offer" class="btn btn-primary">View more details!</a>
 									</div>
 								</div>
 							</div>

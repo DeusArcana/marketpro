@@ -20,7 +20,7 @@ include('inc/header.php') ?>
 				<div class="row">
 					<?php 
 						foreach (array_slice($offers, 0, 4) as $key => $offer) {
-							echo product_card($key, $offer);
+							echo product_card($key + 1, $offer);
 						} 
 					?> 
 				</div>
