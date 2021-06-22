@@ -51,7 +51,7 @@ $offers[006] = array(
 	'discount_price' => 49
 );
 
-function product_card($offer)
+function product_card($key, $offer)
 {
 	return <<<HTML
 							<div class="col-md-3 pb-3">
@@ -60,7 +60,7 @@ function product_card($offer)
 									<div class="card-body">
 										<h5 class="card-title">{$offer['name']}</h5>
 										<p class="card-text">{$offer['intro']}</p>
-										<a href="#" class="btn btn-primary">View more details!</a>
+										<a href="offer.php?id={$key}" class="btn btn-primary">View more details!</a>
 									</div>
 								</div>
 							</div>
