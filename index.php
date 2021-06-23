@@ -1,7 +1,9 @@
-<?php include('inc/product_card.php'); ?>
 <?php 
 
 $pageTitle = 'Home';
+
+include('config/config.php');
+include('inc/product_card.php');
 include('inc/header.php') ?>
 
 			<div class="container bg-light border rounded-3 mb-4">
@@ -22,6 +24,7 @@ include('inc/header.php') ?>
 						foreach (array_slice($offers, 0, 4) as $key => $offer) {
 							echo product_card($key + 1, $offer);
 						} 
+						
 					?> 
 				</div>
 		 	</div>

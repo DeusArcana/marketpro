@@ -1,4 +1,6 @@
-<?php $activePage = basename($_SERVER['PHP_SELF'], ".php"); ?>
+<?php 
+	$activePage = basename($_SERVER['PHP_SELF'], ".php"); 
+	?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,10 +12,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/css/main.css">
 		<link rel="icon" type="image/x-icon" href="marketpro.ico">
-		<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+		<script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 	</head>
 	<body>
 		<div class="container-fluid">
@@ -26,16 +28,16 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 							<li class="nav-item">
-								<a class="nav-link <?= ($activePage == 'index') ? 'active':''; ?>" aria-current="page" href="index.html">Home</a>
+								<a class="nav-link <?= ($activePage == 'index') ? 'active':''; ?>" aria-current="page" href="/index.html">Home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link <?= ($activePage == 'offers') ? 'active':''; ?>" href="offers.html">Offers</a>
+								<a class="nav-link <?= ($activePage == 'offers') ? 'active':''; ?>" href="/offers.html">Offers</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link <?= ($activePage == 'about_us') ? 'active':''; ?>" href="about_us.html">About us</a>
+								<a class="nav-link <?= ($activePage == 'about_us') ? 'active':''; ?>" href="/about_us.html">About us</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link <?= ($activePage == 'contact') ? 'active':''; ?>" href="contact.html">Contact</a>
+								<a class="nav-link <?= ($activePage == 'contact') ? 'active':''; ?>" href="/contact">Contact</a>
 							</li>
 						</ul>
 					</div>
