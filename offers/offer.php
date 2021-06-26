@@ -24,7 +24,7 @@ try {
 }
 
 $pageTitle = 'Offers';
-include(__ROOT__ . 'partials/header.php'); 
+include __ROOT__ . 'partials/header.php'; 
 
 ?>
 
@@ -39,4 +39,4 @@ include(__ROOT__ . 'partials/header.php');
 				</div>
 			</div>
 
-<?php include(__ROOT__ . 'partials/footer.php')	?>		
+<?php include __ROOT__ . 'partials/footer.php'	?>		

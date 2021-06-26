@@ -2,9 +2,9 @@
 
 $pageTitle = 'Home';
 
-include('config/config.php');
-include('partials/product_card.php');
-include('partials/header.php') ?>
+include_once 'config/config.php';
+include __ROOT__ . 'partials/product_card.php';
+include __ROOT__ . 'partials/header.php' ?>
 
 			<div class="container bg-light border rounded-3 mb-4">
 				<div class="p-5 mb-4 bg-light rounded-3">
@@ -29,4 +29,4 @@ include('partials/header.php') ?>
 				</div>
 		 	</div>
 
-<?php include('partials/footer.php')	?>		
+<?php include __ROOT__ . 'partials/footer.php'	?>		

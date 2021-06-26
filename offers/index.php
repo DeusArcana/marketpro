@@ -2,11 +2,11 @@
 
 namespace offers;
 
-include_once('../config/config.php');
-include(__ROOT__ . 'partials/product_card.php'); 
+include_once '../config/config.php';
+include __ROOT__ . 'partials/product_card.php'; 
 
 $pageTitle = 'Offers';
-include(__ROOT__ . 'partials/header.php');
+include __ROOT__ . 'partials/header.php';
 
  ?>
 
@@ -30,4 +30,4 @@ include(__ROOT__ . 'partials/header.php');
 				</div>
 		 	</div>
 
-<?php include(__ROOT__ . 'partials/footer.php')	?>		
+<?php include __ROOT__ . 'partials/footer.php'	?>		

@@ -1,8 +1,8 @@
 <?php 
 $pageTitle = 'About us';
 
-include_once('../config/config.php');
-include(__ROOT__ . 'partials/header.php');
+include_once '../config/config.php';
+include __ROOT__ . 'partials/header.php';
 
 ?>
 
@@ -16,4 +16,4 @@ include(__ROOT__ . 'partials/header.php');
 				</div>
 			</div>
 
-<?php include(__ROOT__ . 'partials/footer.php')	?>
+<?php include __ROOT__ . 'partials/footer.php' ?>
