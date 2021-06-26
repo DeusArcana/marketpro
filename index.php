@@ -3,8 +3,8 @@
 $pageTitle = 'Home';
 
 include('config/config.php');
-include('inc/product_card.php');
-include('inc/header.php') ?>
+include('partials/product_card.php');
+include('partials/header.php') ?>
 
 			<div class="container bg-light border rounded-3 mb-4">
 				<div class="p-5 mb-4 bg-light rounded-3">
@@ -29,4 +29,4 @@ include('inc/header.php') ?>
 				</div>
 		 	</div>
 
-<?php include('inc/footer.php')	?>		
+<?php include('partials/footer.php')	?>		

@@ -1,6 +1,6 @@
 <?php 
 $pageTitle = '404 Not Found';
-include('inc/header.php') ?>
+include('partials/header.php') ?>
 
 			<div class="container">
 				<h1>Page Not Found</h1>

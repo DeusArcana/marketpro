@@ -6,7 +6,7 @@ $offers[001] = array(
 	'name' => 'Special sushi',
 	'intro' => 'All japanese flavor in one bite',
 	'description' => 'You definitely cannot lose this offer',
-	'image' => 'img/sushi.jpg',
+	'image' => '../img/sushi.jpg',
 	'price' => 389,
 	'discount_price' => 49
 );
@@ -14,7 +14,7 @@ $offers[002] = array(
 	'name' => 'Special sushi',
 	'intro' => 'All japanese flavor in one bite',
 	'description' => 'You definitely cannot lose this offer',
-	'image' => 'img/sushi.jpg',
+	'image' => '../img/sushi.jpg',
 	'price' => 389,
 	'discount_price' => 49
 );
@@ -22,7 +22,7 @@ $offers[003] = array(
 	'name' => 'Special sushi',
 	'intro' => 'All japanese flavor in one bite',
 	'description' => 'You definitely cannot lose this offer',
-	'image' => 'img/sushi.jpg',
+	'image' => '../img/sushi.jpg',
 	'price' => 389,
 	'discount_price' => 49
 );
@@ -30,7 +30,7 @@ $offers[004] = array(
 	'name' => 'Special sushi',
 	'intro' => 'All japanese flavor in one bite',
 	'description' => 'You definitely cannot lose this offer',
-	'image' => 'img/sushi.jpg',
+	'image' => '../img/sushi.jpg',
 	'price' => 389,
 	'discount_price' => 49
 );
@@ -38,7 +38,7 @@ $offers[005] = array(
 	'name' => 'Special sushi',
 	'intro' => 'All japanese flavor in one bite',
 	'description' => 'You definitely cannot lose this offer',
-	'image' => 'img/sushi.jpg',
+	'image' => '../img/sushi.jpg',
 	'price' => 389,
 	'discount_price' => 49
 );
@@ -46,7 +46,7 @@ $offers[006] = array(
 	'name' => 'Special sushi',
 	'intro' => 'All japanese flavor in one bite',
 	'description' => 'You definitely cannot lose this offer',
-	'image' => 'img/sushi.jpg',
+	'image' => '../img/sushi.jpg',
 	'price' => 389,
 	'discount_price' => 49
 );
@@ -60,12 +60,10 @@ function product_card($key, $offer)
 									<div class="card-body">
 										<h5 class="card-title">{$offer['name']}</h5>
 										<p class="card-text">{$offer['intro']}</p>
-										<a href="/offer.html?id={$key}" class="btn btn-primary">View more details!</a>
+										<a href="/offers/offer.php?id={$key}" class="btn btn-primary">View more details!</a>
 									</div>
 								</div>
 							</div>
 
 		HTML;
 }
-
-

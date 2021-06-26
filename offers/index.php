@@ -1,7 +1,14 @@
-<?php include('inc/product_card.php'); ?>
 <?php 
+
+namespace offers;
+
+include_once('../config/config.php');
+include(__ROOT__ . 'partials/product_card.php'); 
+
 $pageTitle = 'Offers';
-include('inc/header.php') ?>
+include(__ROOT__ . 'partials/header.php');
+
+ ?>
 
 			<div class="container bg-light border rounded-3 mb-4">
 				<div class="p-5 mb-4 bg-light rounded-3">
@@ -23,4 +30,4 @@ include('inc/header.php') ?>
 				</div>
 		 	</div>
 
-<?php include('inc/footer.php')	?>		
+<?php include(__ROOT__ . 'partials/footer.php')	?>		

@@ -1,7 +1,7 @@
 <?php 
 $pageTitle = 'Contact';
 include('../config/config.php');
-include(__ROOT__ . '/inc/header.php') ?>
+include(__ROOT__ . 'partials/header.php') ?>
 
 			<div class="container bg-light border rounded-3 mb-4">
 				<div class="p-5 mb-4 bg-light rounded-3">
@@ -13,4 +13,4 @@ include(__ROOT__ . '/inc/header.php') ?>
 				</div>
 			</div>
 
-<?php include(__ROOT__ . '/inc/footer.php')	?>		
+<?php include(__ROOT__ . 'partials/footer.php')	?>		

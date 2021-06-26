@@ -1,5 +1,5 @@
 <?php 
-	$activePage = basename($_SERVER['PHP_SELF'], ".php"); 
+	$activePage = str_replace('/', '', dirname($_SERVER['SCRIPT_NAME']));
 	?>
 
 <!DOCTYPE html>
@@ -14,7 +14,7 @@
 
 		<link rel="stylesheet" href="/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/css/main.css">
-		<link rel="icon" type="image/x-icon" href="marketpro.ico">
+		<link rel="icon" type="image/x-icon" href="../img/marketpro.ico">
 		<script src="/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 	</head>
 	<body>
@@ -31,10 +31,10 @@
 								<a class="nav-link <?= ($activePage == 'index') ? 'active':''; ?>" aria-current="page" href="/index.html">Home</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link <?= ($activePage == 'offers') ? 'active':''; ?>" href="/offers.html">Offers</a>
+								<a class="nav-link <?= ($activePage == 'offers') ? 'active':''; ?>" href="/offers">Offers</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link <?= ($activePage == 'about_us') ? 'active':''; ?>" href="/about_us.html">About us</a>
+								<a class="nav-link <?= ($activePage == 'about_us') ? 'active':''; ?>" href="/about_us">About us</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link <?= ($activePage == 'contact') ? 'active':''; ?>" href="/contact">Contact</a>
