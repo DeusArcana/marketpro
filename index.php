@@ -2,7 +2,7 @@
 
 $pageTitle = 'Home';
 
-include_once 'config/config.php';
+include_once './config/config.php';
 include __ROOT__ . 'partials/product_card.php';
 include __ROOT__ . 'partials/header.php' ?>
 

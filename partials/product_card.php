@@ -1,48 +1,14 @@
 <?php
 
+// require __ROOT__ . 'config/db.php';
+
+// $stmt = $conn->query('SELECT * FROM `offers`');
+
+// $offers = $stmt->fetchAll();
+
 $offers = array();
 
 $offers[001] = array(
-	'name' => 'Special sushi',
-	'intro' => 'All japanese flavor in one bite',
-	'description' => 'You definitely cannot lose this offer',
-	'image' => '../img/sushi.jpg',
-	'price' => 389,
-	'discount_price' => 49
-);
-$offers[002] = array(
-	'name' => 'Special sushi',
-	'intro' => 'All japanese flavor in one bite',
-	'description' => 'You definitely cannot lose this offer',
-	'image' => '../img/sushi.jpg',
-	'price' => 389,
-	'discount_price' => 49
-);
-$offers[003] = array(
-	'name' => 'Special sushi',
-	'intro' => 'All japanese flavor in one bite',
-	'description' => 'You definitely cannot lose this offer',
-	'image' => '../img/sushi.jpg',
-	'price' => 389,
-	'discount_price' => 49
-);
-$offers[004] = array(
-	'name' => 'Special sushi',
-	'intro' => 'All japanese flavor in one bite',
-	'description' => 'You definitely cannot lose this offer',
-	'image' => '../img/sushi.jpg',
-	'price' => 389,
-	'discount_price' => 49
-);
-$offers[005] = array(
-	'name' => 'Special sushi',
-	'intro' => 'All japanese flavor in one bite',
-	'description' => 'You definitely cannot lose this offer',
-	'image' => '../img/sushi.jpg',
-	'price' => 389,
-	'discount_price' => 49
-);
-$offers[006] = array(
 	'name' => 'Special sushi',
 	'intro' => 'All japanese flavor in one bite',
 	'description' => 'You definitely cannot lose this offer',

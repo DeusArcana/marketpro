@@ -2,10 +2,10 @@
 
 namespace offers;
 
+$pageTitle = 'Offers';
+
 include_once '../config/config.php';
 include __ROOT__ . 'partials/product_card.php'; 
-
-$pageTitle = 'Offers';
 include __ROOT__ . 'partials/header.php';
 
  ?>
