@@ -1,21 +1,10 @@
 <?php
 
-// require __ROOT__ . 'config/db.php';
+require __ROOT__ . 'config/db.php';
 
-// $stmt = $conn->query('SELECT * FROM `offers`');
+$stmt = $conn->query('SELECT * FROM `offers`');
 
-// $offers = $stmt->fetchAll();
-
-$offers = array();
-
-$offers[001] = array(
-	'name' => 'Special sushi',
-	'intro' => 'All japanese flavor in one bite',
-	'description' => 'You definitely cannot lose this offer',
-	'image' => '../img/sushi.jpg',
-	'price' => 389,
-	'discount_price' => 49
-);
+$offers = $stmt->fetchAll();
 
 function product_card($key, $offer)
 {
@@ -26,7 +15,7 @@ function product_card($key, $offer)
 									<div class="card-body">
 										<h5 class="card-title">{$offer['name']}</h5>
 										<p class="card-text">{$offer['intro']}</p>
-										<a href="/offers/offer.php?id={$key}" class="btn btn-primary">View more details!</a>
+										<a href="/offers/offer.html?id={$offer['id']}" class="btn btn-outline-primary">View more details!</a>
 									</div>
 								</div>
 							</div>
