@@ -10,13 +10,7 @@ try {
 	}
 
 	$offer_id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
-		
-	// if (!isset($offers[$offer_id])) {
-	// 	throw new \Exception("No data.");
-	// } 
-
-	// $offer = $offers[$offer_id];
-	
+			
 } catch (\Throwable $th) {
 	header('Location: 404.php');
 	exit();

@@ -3,14 +3,15 @@
 namespace config;
 
 try {
-    if (! @include_once(__ROOT__ . 'config/autoload.php')) // @ - to suppress warnings, 
-    // you can also use error_reporting function for the same purpose which may be a better option
-        throw new \Exception ('autoload.php	does not exist');
-    // or 
-    if (!file_exists(__ROOT__ . 'config/autoload.php'))
-        throw new \Exception ('autoload.php	does not exist');
-    else
-        require_once(__ROOT__ . 'config/autoload.php'); 
+    if (!@include_once(__ROOT__ . 'config/autoload.php')) {
+		throw new \Exception('autoload.php	does not exist');
+	}
+
+	if (!file_exists(__ROOT__ . 'config/autoload.php')) {
+		throw new \Exception('autoload.php	does not exist');
+	} else {
+		require_once(__ROOT__ . 'config/autoload.php');
+	}
 }
 catch(\Exception $e) {    
     echo "Message : " . $e->getMessage() . '<br/>';
@@ -26,5 +27,3 @@ try {
 	echo 'The connection has failed<br/>';
 	echo $ex->getMessage() . '<br/>';
 }
-
-// echo $conn->getAttribute(\PDO::ATTR_CONNECTION_STATUS);
