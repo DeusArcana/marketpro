@@ -16,6 +16,7 @@ function product_card($key, $offer)
 										<h5 class="card-title">{$offer['name']}</h5>
 										<p class="card-text">{$offer['intro']}</p>
 										<a href="/offers/offer.html?id={$offer['id']}" class="btn btn-outline-primary">View more details!</a>
+										<a href="/cart/cart.html?id={$offer['id']}&action=add" class="btn btn-outline-sucess">Add to cart!</a>
 									</div>
 								</div>
 							</div>
