@@ -48,10 +48,14 @@ require __ROOT__ . 'config/db.php'; ?>
 
 ?>
 <?php 
+$pageTitle = 'Cart';
+include __ROOT__ . 'partials/header.php';
+include __ROOT__ . 'partials/product_cart.php';
 
 if (isset($_SESSION['cart'])) {
-	echo "<table border=\"1\" padding\"4\" width=\"40%\"";
-	$total =0;
+	echo table_header();
+
+	$total = 0;
 	foreach ($_SESSION["cart"] as $key => $quantity) {
 		try {
 			$result = $conn->prepare('SELECT `name`, `description`, `discount_price` FROM `offers` WHERE `offers`.`id` =?');
@@ -70,28 +74,21 @@ if (isset($_SESSION['cart'])) {
 			$cost = $price * $quantity;
 			$total = $total + $cost;
 
-			echo "<tr>";
-			echo 	"<td align=\"center\">{$offer['name']}</td>";
-			echo 	"<td align=\"center\">{$quantity} <a href=\"$_SERVER[PHP_SELF]?action=remove&id=$session_offer_id\">X</a></td>";
-			echo 	"<td align=\"center\">{$cost}</td>";
-			echo "</tr>";
+			echo product_cart($offer, $quantity, $cost, $session_offer_id);
 		}
 
 	}
 
-	echo "<tr>";
-	echo 	"<td colspan=\"2\" align=\"right\">Total:</td>";
-	echo 	"<td colspan=\"2\" align=\"center\">$total</td>";
-	echo "</tr>";
-	echo "<tr>";
-	echo 	"<td colspan=\"3\" align=\"right\"><a href=\"$_SERVER[PHP_SELF]?action=empty\" onclick=\"return confirm('Are you sure?')\">Empty cart</a></td>";
-	echo "</tr>";
-
-	echo "</table>";
+	echo table_footer($total);
 
 } else {
-	echo 'There\'s no items on the cart';
+	echo <<<HTML
+	<div class="container">
+		<h3 class="lead">There's no items on the cart</h3>
+	</div>
+
+	HTML;
 }
 
-echo "<a href=\"index.php\">Buy again</a>";
+include __ROOT__ . 'partials/footer.php';
 ?>
